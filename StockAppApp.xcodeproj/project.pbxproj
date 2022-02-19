@@ -18,6 +18,9 @@
 		810DDB7927C177F1004027D8 /* QuoteManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB7827C177F1004027D8 /* QuoteManagerProtocol.swift */; };
 		810DDB7C27C179CC004027D8 /* MockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB7B27C179CC004027D8 /* MockQuoteManager.swift */; };
 		810DDB7F27C17CFA004027D8 /* StockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB7E27C17CFA004027D8 /* StockQuoteManager.swift */; };
+		810DDB8327C183AB004027D8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB8227C183AB004027D8 /* HeaderView.swift */; };
+		810DDB8C27C18CB7004027D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB8B27C18CB7004027D8 /* CustomTextField.swift */; };
+		810DDB8F27C18E5D004027D8 /* SearchTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DDB8E27C18E5D004027D8 /* SearchTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		810DDB7827C177F1004027D8 /* QuoteManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManagerProtocol.swift; sourceTree = "<group>"; };
 		810DDB7B27C179CC004027D8 /* MockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQuoteManager.swift; sourceTree = "<group>"; };
 		810DDB7E27C17CFA004027D8 /* StockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteManager.swift; sourceTree = "<group>"; };
+		810DDB8227C183AB004027D8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		810DDB8B27C18CB7004027D8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		810DDB8E27C18E5D004027D8 /* SearchTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		810CBEC527C042FE00C96F67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				810DDB8127C18380004027D8 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				810CBECD27C0445E00C96F67 /* NetworkManager.swift */,
+				810DDB8B27C18CB7004027D8 /* CustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -184,6 +192,15 @@
 				810DDB7E27C17CFA004027D8 /* StockQuoteManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		810DDB8127C18380004027D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				810DDB8227C183AB004027D8 /* HeaderView.swift */,
+				810DDB8E27C18E5D004027D8 /* SearchTextView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,10 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				810CBECE27C0445E00C96F67 /* NetworkManager.swift in Sources */,
+				810DDB8F27C18E5D004027D8 /* SearchTextView.swift in Sources */,
+				810DDB8C27C18CB7004027D8 /* CustomTextField.swift in Sources */,
 				810CBEB527C0427B00C96F67 /* ContentView.swift in Sources */,
 				810CBEB327C0427B00C96F67 /* StockAppAppApp.swift in Sources */,
 				810DDB7127C1706B004027D8 /* Quote.swift in Sources */,
 				810DDB7C27C179CC004027D8 /* MockQuoteManager.swift in Sources */,
+				810DDB8327C183AB004027D8 /* HeaderView.swift in Sources */,
 				810DDB7F27C17CFA004027D8 /* StockQuoteManager.swift in Sources */,
 				810DDB7527C17165004027D8 /* API.swift in Sources */,
 				810DDB6E27C16A3D004027D8 /* GlobalQuote.swift in Sources */,

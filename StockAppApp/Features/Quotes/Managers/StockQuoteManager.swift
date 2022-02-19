@@ -34,6 +34,7 @@ final class StockQuoteManager: QuoteManagerProtocol, ObservableObject {
             }
             
         }
+        
         downloadGroup.notify(queue: DispatchQueue.global()) {completion(.success(internalQuetes))}
         DispatchQueue.main.async {
             self.quotes.append(contentsOf: internalQuetes)
