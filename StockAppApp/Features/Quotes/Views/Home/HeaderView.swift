@@ -15,7 +15,7 @@ struct HeaderView: View {
         return formatter
     } ()
     
-    @Binding var stocks: String
+    @Binding var stocks: [String]
     
     @State private var showSerch = false
     
@@ -23,8 +23,9 @@ struct HeaderView: View {
         HStack {
             VStack(alignment: .leading, spacing: -5) {
                 Text("Stocks")
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .bold()
+                
                 
                 Text("\(Date(), formatter: dateFormatter)")
                     .foregroundColor(.gray)
@@ -47,11 +48,12 @@ struct HeaderView: View {
             
             
         }
+       
     }
 }
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(stocks: .constant(""))
+        HeaderView(stocks: .constant(["AAPL", "GOOG"]))
     }
 }

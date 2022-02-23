@@ -13,7 +13,8 @@ struct SearchTextView: View {
     @Binding var searchTerm: String
     
     var body: some View {
-        CustomTextField(placeholder: Text("Search").foregroundColor(Color.gray), text: $searchTerm)
+        CustomTextField(placeholder:
+            Text("Search").foregroundColor(Color.gray), text: $searchTerm)
             .foregroundColor(.white)
             .padding(.leading, 40)
             .frame(height: 30)
@@ -22,8 +23,10 @@ struct SearchTextView: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(Color.gray)
                     .padding(.leading, 10)
+                    
             })
     }
+    
 }
 
 struct SearchTextView_Previews: PreviewProvider {
